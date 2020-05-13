@@ -1,0 +1,16 @@
+#deadlines-page{
+    height: 700px;
+    background-image: url("https://img.freepik.com/free-photo/time-background-concept-vintage-classic-alarm-clock-yellow-empty-background-time-management-comcept_90380-910.jpg?size=626&ext=jpg");
+}
+
+#deadlines-text{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 18px;
+    width: 500px;
+    padding: 50px;
+    margin-left: 35%;
+    color: gold;
+    text-align: center;
+    background-color: #001935;
+}

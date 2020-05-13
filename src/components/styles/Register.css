@@ -1,0 +1,12 @@
+.inner_register {
+    width: 400px;
+    padding-left: 40%;
+    padding-top: 15%;
+    color: #001935;
+    position: absolute;
+}
+
+.inner_register h1 {
+    border-bottom: 4px solid;
+    margin-bottom: 30px;
+}
