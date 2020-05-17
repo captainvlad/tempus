@@ -1,6 +1,7 @@
 #inner-tracking-page{
-    height: 700px;
+    height: 800px;
     background-image: url("https://img.freepik.com/free-photo/time-background-concept-vintage-classic-alarm-clock-yellow-empty-background-time-management-comcept_90380-910.jpg?size=626&ext=jpg");
+    padding-bottom: 50px;
 }
 
 #inner-tracking-page #heady {
@@ -22,6 +23,12 @@
     background-color: #001935;
 }
 
-.S{
-    background-color: blueviolet;
+#inner-tracking-page #addButton{
+    margin: 40px;
+    padding: 10px;
+    color: #001935;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: solid #001935 2px;
 }

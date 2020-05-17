@@ -1,46 +1,66 @@
 import React from "react";
-import HeadLine from "./HeadLine";
-import Footer from "./Footer";
+import Post from "./Post";
 
 class Tracking extends React.Component {
-    state = {
-        numChildren: 0
+    constructor() {
+        super();
+        this.postID = 0;
+
+        this.state = {
+            postArray : [],
+            Body : "",
+            id : ""
+        }
     }
 
-    render () {
-        const children = [];
-
-        for (var i = 0; i < this.state.numChildren; i += 1) {
-            children.push(<HeadLine />);
-        };
-
-        return (
-            <ParentComponent addChild={this.onAddChild}>
-                {children}
-            </ParentComponent>
-        );
-    }
-
-    onAddChild = () => {
+    deleteEvent = (index) =>{
+        const copyPostArray = Object.assign([], this.state.postArray);
+        copyPostArray.splice(index, 1);
         this.setState({
-            numChildren: this.state.numChildren + 1
-        });
+            postArray: copyPostArray
+        })
+    }
+
+    setPost = (element) => {
+        this.setState({
+            Body: element.target.value
+        })
+    }
+
+    addPost = () =>{
+        this.postID = this.postID + 1
+        const copyPostArray = Object.assign([], this.state.postArray)
+        copyPostArray.push( {
+            id: this.postID,
+            body: this.state.Body
+        } )
+        this.setState({
+            postArray : copyPostArray
+        })
+    }
+
+    render() {
+        return(
+            <div>
+                <input type="text" onBlur={this.setPost} />
+                <button onClick={this.addPost}>Add Post</button>
+                <ul>
+                    {
+                        this.state.postArray.map( (post, index) => {
+                            return (
+                                <Post
+                                key = {post.id}
+                                id = {post.id}
+                                body = {post.body}
+                                delete = {this.deleteEvent.bind(this, index)}
+                                />
+                            )
+                        } )
+                    }
+                </ul>
+            </div>
+        )
     }
 }
-
-const ParentComponent = props => (
-    <div>
-        <HeadLine />
-        <div className="card calculator">
-            <button type="button" onClick={props.addChild} >Add component</button>
-            <div id="children-pane">
-                {props.children}
-            </div>
-        </div>
-        <Footer />
-    </div>
-);
-
-const ChildComponent = props => <div>{"I am child " + props.number}</div>;
 
 export default Tracking;

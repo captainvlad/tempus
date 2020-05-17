@@ -13,10 +13,12 @@ import Tracking from "./components/Tracking";
 import Deadlines from "./components/Deadlines";
 import Stats from "./components/Stats";
 
+import BackComp from "./components/BackComp";
+
 function App() {
   return (
     <div className="App">
-      <Route exact path="/" component={Page}/>
+      <Route exact path="/" component={BackComp}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/log_in" component={Sign_up}/>
       <Route exact path="/about" component={About}/>
