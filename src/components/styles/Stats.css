@@ -3,6 +3,12 @@
     background-image: url("https://img.freepik.com/free-photo/time-background-concept-vintage-classic-alarm-clock-yellow-empty-background-time-management-comcept_90380-910.jpg?size=626&ext=jpg");
 }
 
+#staty{
+    color: gold;
+    background-color: #001935;
+    border-top: 1px solid gold;
+}
+
 #stats-text{
     margin-top: 150px;
     margin-bottom: 150px;
