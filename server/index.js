@@ -43,7 +43,7 @@ const createMerchant = (body) => {
   return new Promise(function(resolve, reject) {
     const { name, surname, email } = body
     
-    pool.query(`INSERT INTO bank_account (name, surname) VALUES ('${name}', '${surname}', '${email}') RETURNING *`, (error, results) => {
+    pool.query(`INSERT INTO users (name, surname) VALUES ('${name}', '${surname}', '${email}') RETURNING *`, (error, results) => {
       if (error) {
         reject(error)
       } 
