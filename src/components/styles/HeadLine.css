@@ -81,6 +81,7 @@ body {
     margin-top: 7%;
     margin-left: 45%;
     display: inline-block;
+    padding-right: 50%;
 }
 
 @media screen and (max-height: 450px) {

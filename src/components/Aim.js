@@ -8,7 +8,8 @@ class Aim extends React.Component{
         return (
             <div id="aim-page">
                 <HeadLine />
-                <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https%3A%2F%2Fwww.gcu.edu%2Fsites%2Fdefault%2Ffiles%2Fimages%2Farticles%2F419cbf347df385b8b5ae8e23dd1c1ebd1b1ca35a.jpg"/>
+                <h1 id="aimy">Aim</h1>
+                <img id="Franklin" src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https%3A%2F%2Fwww.gcu.edu%2Fsites%2Fdefault%2Ffiles%2Fimages%2Farticles%2F419cbf347df385b8b5ae8e23dd1c1ebd1b1ca35a.jpg"/>
                 <div id="inner-aim-page">
                     <h1>"Lost time is never found again."</h1>
                     These words of wisdom of Benjamin Franklin were the main principe while
