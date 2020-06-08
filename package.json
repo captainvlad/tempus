@@ -10,7 +10,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-router-dom": "latest",
-    "node-sass": "latest"
+    "node-sass": "latest",
+    "firebase": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
