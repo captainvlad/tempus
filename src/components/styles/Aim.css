@@ -4,9 +4,15 @@
     background-image: url("https://img.freepik.com/free-photo/time-background-concept-vintage-classic-alarm-clock-yellow-empty-background-time-management-comcept_90380-910.jpg?size=626&ext=jpg");
 }
 
+#aim-page #aimy{
+    color: gold;
+    background-color: #001935;
+    border-top: solid 1px gold;
+}
+
 #aim-page #inner-aim-page{
     width: 750px;
-    margin-left: 31%;
+    margin-left: 29%;
     margin-top: 5%;
     background-color: #001935;
     color: gold;
@@ -15,9 +21,8 @@
     margin-bottom: 100px;
 }
 
-#aim-page img{
+#aim-page #Franklin{
     margin-top: 70px;
-    margin-left: 32%;
     margin-bottom: 10px;
 }
 

@@ -9,9 +9,9 @@
     width: 100%;
     display: block;
     overflow: hidden;
-    padding: 70px 0;
     box-sizing: border-box;
     background-color: #001935;
+    height: 250px;
 }
 
 .inner_footer {
